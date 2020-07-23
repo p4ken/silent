@@ -272,6 +272,8 @@ namespace AtsPlugin.Core
             var panelArray = new AtsIoArray(panel);
             var soundArray = new AtsIoArray(sound);
 
+            soundArray[180] = AtsSoundControlInstruction.Stop;
+
             return new AtsHandles()
             {
                 Power = userPower,
